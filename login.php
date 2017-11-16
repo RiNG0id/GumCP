@@ -1,10 +1,17 @@
 <?php
-switch ($_REQUEST['action']) {
-	case 'incorrect_login':
-		$message = 'Incorrect Username/Password combination';
+// this creates problem when redirecting to login page action not define
+//switch ($_REQUEST['action']) {
+//	case 'incorrect_login':
+//		$message = 'Incorrect Username/Password combination';
 		
-	break;
+//	break;
 	
+//}
+
+//hier is solution
+
+if (isset($_REQUEST['action'] == 'incorrect_login') {
+              $message = 'Incorrect Username/Password combination';
 }
 
 ?>
